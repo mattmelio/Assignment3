@@ -4,16 +4,44 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="script.js"/></script>
     
     <title> Assignment 3 </title>
     
-    <link rel= "stylesheet" href="style.css">
+   
   </head>
   <body>
 
-   
-
+   <div>
+     <ul>
+       <li onclick="render_view('#post_view1',0)"> <span>Quiz 1</span> </li>
+       <li onclick="render_view('#post_view1',1)"> <span>Quiz 2</span> </li>
+     </ul>
+   </div>
+    
+   <div id="view_widget">
+   </div>
+    
   </body> 
+
+ <script id="post_view1" type="text/x-handlebars-template">
+    <div class="card-body">
+      <h4 class="card-title">{{name}}</h4>
+      <p class="card-text">{{expertise}}</p>
+      <a href="{{profile}}" class="btn btn-primary">See Profile</a>
+    </div>
+  </script>
+
+
+  <script id="post_view2" type="text/x-handlebars-template">
+    <div class="card-body">
+      <h4 class="card-title" style="color:red;">{{name}}</h4>
+      <p class="card-text">{{expertise}}</p>
+      <a href="{{profile}}" class="btn btn-primary">See Profile</a>
+    </div>
+  </script>
+</html>
 </html>
