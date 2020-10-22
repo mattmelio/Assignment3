@@ -5,7 +5,7 @@ var model  = [
       profile : "https://scholar.google.com/citations?user=0PkTM-MAAAAJ&hl=en"
     },
     {
-      name: "Dr. Yadav",
+      name: "HTML Quiz",
       expertise : "Mobile Computing, Computer Systems",
       profile : "https://scholar.google.co.in/citations?user=OsCNwzEAAAAJ&hl=en"
     },
