@@ -1,6 +1,6 @@
 var model  = [
     {
-      name: "Dr. Christoforou",
+      name: "Java Quiz",
       expertise : "Machine Learing, Artificial Intelligence; Brain-computer interfaces; neurally-informed predicrtive models",
       profile : "https://scholar.google.com/citations?user=0PkTM-MAAAAJ&hl=en"
     },
