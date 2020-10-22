@@ -29,10 +29,21 @@
 
  <script id="post_view1" type="text/x-handlebars-template">
     <div class="card-body">
+    
+      <form class="cf">
+  <div class="half left cf">
+    <input type="text" id="input-name" placeholder="Name">
+    <input type="email" id="input-email" placeholder="Email address">
+  </div>
+  <input type="submit" value="Submit" id="input-submit">
+      </form>
+      
       <h4 class="card-title">{{name}}</h4>
       <p class="card-text">{{expertise}}</p>
       <a href="{{profile}}" class="btn btn-primary">See Profile</a>
+      
     </div>
+    
   </script>
 
 
@@ -44,4 +55,4 @@
     </div>
   </script>
 </html>
-</html>
+
