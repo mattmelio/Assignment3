@@ -14,27 +14,7 @@
   </head>
   <body>
     
-     <ul>
-       <li onclick="render_view('#post_view1',0)"> <span>Quiz 1</span> </li>
-       <li onclick="render_view('#post_view1',1)"> <span>Quiz 2</span> </li>
-     </ul>
-   </div>
-  
-  <h1>Welcome to my Quiz Application!</h1>
-  <h2>Select a quiz from the nav bar to get started.</h2>
-    
-   <div id="view_widget">
-   </div>
-
-   <script src="script.js"/></script>
-   <script src="script2.js"/></script>
-
-  </body>
-
-   <script id="post_view1" type="text/x-handlebars-template">
-    <div class="card-body">
-    
-      <div id="quizContainer" class="container">
+    <div id="quizContainer" class="container">
       <div class= "title"> Java Quiz </div>
       <div id= "question" class="question"></div>
       <label class = "option"><input type="radio" name="option" value ="1"/><span id = "opt1"></span></label>
@@ -43,13 +23,11 @@
       <button id ="nextButton" class= "next-btn" onclick="loadNextQuestion();"> Next Question </button>
     </div> 
     <div id="result" class= "container result" style="display:none;">
-   
-    </div>
-    
       
-    </div>
-    
-  </script>
+   <script src="script.js"/></script>
+   <script src="script2.js"/></script>
+
+  </body>
 
   
 </html>
