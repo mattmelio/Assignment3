@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="script.js"/></script>
@@ -14,45 +15,24 @@
    
   </head>
   <body>
-
-   <div>
-     <ul>
-       <li onclick="render_view('#post_view1',0)"> <span>Quiz 1</span> </li>
-       <li onclick="render_view('#post_view1',1)"> <span>Quiz 2</span> </li>
-     </ul>
-   </div>
     
-   <div id="view_widget">
-   </div>
-    
-  </body> 
-
- <script id="post_view1" type="text/x-handlebars-template">
-    <div class="card-body">
-    
-      <form class="cf">
-  <div class="half left cf">
-    <input type="text" id="input-name" placeholder="Name">
-    <input type="email" id="input-email" placeholder="Email address">
-  </div>
-  <input type="submit" value="Submit" id="input-submit">
-      </form>
-      
-      <h4 class="card-title">{{name}}</h4>
-      <p class="card-text">{{expertise}}</p>
-      <a href="{{profile}}" class="btn btn-primary">See Profile</a>
-      
+    <div id="quizContainer" class="container">
+      <div class= "title"> Java Quiz</div>
+      <div id= "question" class="question"></div>
+      <label class = "option"><input type="radio" name="option" value ="1"/><span id = "opt1"></span></label>
+      <label class = "option"><input type="radio" name="option" value ="2"/><span id = "opt2"></span></label>
+      <label class = "option"><input type="radio" name="option" value ="3"/><span id = "opt3"></span></label>
+      <button id ="nextButton" class= "next-btn" onclick="loadNextQuestion();"> Next Question </button>
+    </div> 
+    <div id="result" class= "container result" style="display:none;">
+   
     </div>
-    
-  </script>
+    <script src="script.js"/></script>
+    <script src="script2.js"/></script>
+  </body>
 
 
-  <script id="post_view2" type="text/x-handlebars-template">
-    <div class="card-body">
-      <h4 class="card-title" style="color:red;">{{name}}</h4>
-      <p class="card-text">{{expertise}}</p>
-      <a href="{{profile}}" class="btn btn-primary">See Profile</a>
-    </div>
-  </script>
+  
+  
 </html>
 
