@@ -18,4 +18,30 @@ funtion loadQuestion (questionIndex) {
   opt3.textContent= q.option3;
 };
 
-function 
+function loadNextQuestion () {
+  var selectedOption = document.querySelector('input[type=radio]:checked');
+  if(!selectedOption){
+    alert('Please select your answer!');
+    return;
+  }
+  
+  var answer= selectedOption.value;
+  if(questions[currentQuestion].answer == answer){
+    score+=5;
+  }
+  selectedOption.check= false;
+  currentQuestion++;
+  
+  if(currentQuestion= totQuestions- 1){
+    nextButton.textContent='finish';
+  }
+  
+  if(currentQuestion= totQuestions){
+    container.style.display= 'none';
+    resultCont.style.display= '';
+    resultCont.textContent= 'Your Score is:' + score;
+    return;
+  }
+  loadQuestion(currentQuestion);
+}
+ loadQuestion(currentQuestion);
