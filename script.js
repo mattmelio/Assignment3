@@ -118,7 +118,7 @@ var questions = [{
     "option2":"Object",
     "option3":"Interpreter",
     "answer":"1"
-}]
+}];
 
 
 
@@ -243,3 +243,4 @@ var questions2 = [{
     "option2":"",
     "option3":"",
     "answer":""
+}];
