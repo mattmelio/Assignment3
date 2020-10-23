@@ -12,41 +12,9 @@ var resultCont= document.getElementById('result');
 
 var model  = [
     {
-      funtion loadQuestion (questionIndex) {
-  var q= questions[questionIndex];
-  questionEL.textContent= (questionIndex +1)+ '.'+q.question;
-  opt1.textContent= q.option1;
-  opt2.textContent= q.option2;
-  opt3.textContent= q.option3;
-};
-
-function loadNextQuestion () {
-  var selectedOption = document.querySelector('input[type=radio]:checked');
-  if(!selectedOption){
-    alert('Please select your answer!');
-    return;
-  }
-  
-  var answer= selectedOption.value;
-  if(questions[currentQuestion].answer == answer){
-    score+=5;
-  }
-  selectedOption.check= false;
-  currentQuestion++;
-  
-  if(currentQuestion= totQuestions- 1){
-    nextButton.textContent='finish';
-  }
-  
-  if(currentQuestion= totQuestions){
-    container.style.display= 'none';
-    resultCont.style.display= '';
-    resultCont.textContent= 'Your Score is:' + score;
-    return;
-  }
-  loadQuestion(currentQuestion);
-}
- loadQuestion(currentQuestion);
+      name: "HTML Quiz",
+      expertise : "Mobile Computing, Computer Systems",
+      profile : "https://scholar.google.co.in/citations?user=OsCNwzEAAAAJ&hl=en"
     },
     {
       name: "HTML Quiz",
