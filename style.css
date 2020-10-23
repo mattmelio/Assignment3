@@ -1,6 +1,6 @@
 body{
   font-family: 'Staatliches', cursive;
-  background: #6cf;
+  background: #F5F5F5;
 }
 
 .container{
@@ -13,7 +13,7 @@ body{
   background: rgba(255,255,255,0.5);
   padding: 20px;
   border: 1px solid #08038C;
-  box-shadow: 0 0 8px 3px #fff;
+  box-shadow: 0 0 8px 3px #FFFFFF;
 }
 
 .title{
@@ -29,7 +29,7 @@ body{
   font-size: 24px;
   border-radius: 20px;
   margin: 10px 0 10px 0;
-  color: #f6f6f6;
+  color: #F6F6F6;
 }
 
 .option{
@@ -62,7 +62,7 @@ body{
 
 .next-btn:hover{
   background: #08038C;
-  color: #f6f6f6;
+  color: #F6F6F6;
 }
 
 .result{
@@ -73,5 +73,43 @@ body{
 
 .option input:checked .option{
   background: #08038C;
-  color: #000;
+  color: #000000;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li span {
+  display: block;
+  color: #FFFFFF ;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+/* Change the link color to #111 (black) on hover */
+li span:hover {
+  background-color: #111;
 }
