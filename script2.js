@@ -10,7 +10,9 @@ var opt3= document.getElementById('opt3');
 var nextButton= document.getElementById('nextButton');
 var resultCont= document.getElementById('result');
 
-funtion loadQuestion (questionIndex) {
+var model  = [
+    {
+      funtion loadQuestion (questionIndex) {
   var q= questions[questionIndex];
   questionEL.textContent= (questionIndex +1)+ '.'+q.question;
   opt1.textContent= q.option1;
@@ -45,6 +47,16 @@ function loadNextQuestion () {
   loadQuestion(currentQuestion);
 }
  loadQuestion(currentQuestion);
+    },
+    {
+      name: "HTML Quiz",
+      expertise : "Mobile Computing, Computer Systems",
+      profile : "https://scholar.google.co.in/citations?user=OsCNwzEAAAAJ&hl=en"
+    },
+  ];
+
+
+
 
 var render_view = (view_id, model_index) => {
   console.log("Rendering View");
