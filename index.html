@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-   
+    <script src="question.js"></script>
+    <script src="quiz-script.js"></script>
 
     <title> Assignment 3 </title>
     
@@ -16,7 +17,24 @@
   </head>
   <body>
     
-    <div id="quizContainer" class="container">
+    <ul>
+       <li onclick="render_view('#post_view1',0)"> <span>Java Quiz</span> </li>
+       <li onclick="render_view('#post_view1',1)"> <span>HTML Quiz</span> </li>
+     </ul>
+   </div>
+  
+  <h1>Welcome to my Quiz Application!</h1>
+  <h2>Select a quiz from the nav bar to get started.</h2>
+    
+   <div id="view_widget">
+   </div>
+   
+  </body>
+
+<script id="post_view1" type="text/x-handlebars-template">
+    <div class="card-body">
+      
+      <div id="quizContainer" class="container">
       <div class= "title"> Java Quiz </div>
       <div id= "question" class="question"></div>
       <label class = "option"><input type="radio" name="option" value ="1"/><span id = "opt1"></span></label>
@@ -27,10 +45,26 @@
     <div id="result" class= "container result" style="display:none;">
     </div>
       
-    <script src="question.js"></script>
-    <script src="quiz-script.js"></script>
+    </div>
+    
+  </script>
 
-  </body>
+ <script id="post_view1" type="text/x-handlebars-template">
+    <div class="card-body">
+      
+      <div id="quizContainer" class="container">
+      <div class= "title"> HTML Quiz </div>
+      <div id= "question" class="question"></div>
+      <label class = "option"><input type="radio" name="option" value ="1"/><span id = "opt1"></span></label>
+      <label class = "option"><input type="radio" name="option" value ="2"/><span id = "opt2"></span></label>
+      <label class = "option"><input type="radio" name="option" value ="3"/><span id = "opt3"></span></label>
+      <button id ="nextButton" class= "next-btn" onclick="loadNextQuestion();"> Next Question </button>
+    </div> 
+    <div id="result" class= "container result" style="display:none;">
+    </div>
+      
+    </div>
+ 
 
   
 </html>
