@@ -10,8 +10,20 @@ var opt3= document.getElementById('opt3');
 var nextButton= document.getElementById('nextButton');
 var resultCont= document.getElementById('result');
 
+fetch('questions.json')
+    .then((res) => {
+        return res.json();
+    })
+    .then((loadedQuestions) => {
+        questions = loadedQuestions;
+        startGame();
+    })
+    .catch((err) => {
+        console.error(err);
+    });
+
 function loadQuestion (questionIndex) {
-  var q= questions[questionIndex];
+  var q= questions.json[questionIndex];
   questionEL.textContent= (questionIndex +1)+ '.'+q.question;
   opt1.textContent= q.option1;
   opt2.textContent= q.option2;
