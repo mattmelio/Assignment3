@@ -12,7 +12,7 @@ var resultCont= document.getElementById('result');
 
 var model  = [
     {
-      funtion loadQuestion (questionIndex) {
+  function loadQuestion (questionIndex) {
   var q= questions[questionIndex];
   questionEL.textContent= (questionIndex +1)+ '.'+q.question;
   opt1.textContent= q.option1;
