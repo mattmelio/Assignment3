@@ -17,24 +17,12 @@
   </head>
   <body>
     
-    <ul>
-       <li onclick="render_view('#post_view1',0)"> <span>Java Quiz</span> </li>
-       <li onclick="render_view('#post_view1',1)"> <span>HTML Quiz</span> </li>
-     </ul>
-   </div>
+   
   
   <h1>Welcome to my Quiz Application!</h1>
   <h2>Select a quiz from the nav bar to get started.</h2>
     
-   <div id="view_widget">
-   </div>
-   
-  </body>
-
-<script id="post_view1" type="text/x-handlebars-template">
-    <div class="card-body">
-      
-      <div id="quizContainer" class="container">
+     <div id="quizContainer" class="container">
       <div class= "title"> Java Quiz </div>
       <div id= "question" class="question"></div>
       <label class = "option"><input type="radio" name="option" value ="1"/><span id = "opt1"></span></label>
@@ -44,10 +32,13 @@
     </div> 
     <div id="result" class= "container result" style="display:none;">
     </div>
-      
-    </div>
     
-  </script>
+   <div id="view_widget">
+   </div>
+   
+  </body>
+
+
   
 </html>
 
