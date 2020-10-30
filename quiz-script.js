@@ -17,7 +17,7 @@ var model  = [
   questionEL.textContent= (questionIndex +1)+ '.'+q.question;
   opt1.textContent= q.option1;
   opt2.textContent= q.option2;
-  opt3.textContent= q.option3;
+  opt3.textContent= q.option3; 
 };
 
 function loadNextQuestion () {
